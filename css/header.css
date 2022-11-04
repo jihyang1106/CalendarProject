@@ -1,0 +1,109 @@
+/* 기본색 변수 설정 */
+:root {
+    --light--gray:#f4f4f4;
+    --dark--gray:#a9a9a9;
+    --main--blue:#4aa8d8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active{
+    font-weight: bold;
+}
+
+.blue {
+    color: var(--main--blue);
+}
+
+/* header 설정  */
+header{
+    background-color: var(--light--gray);
+}
+
+.inner-container {
+    align-items: center;
+}
+
+.inner-container{
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+}
+
+/* 성공일정 */
+#title a{
+    font-size: 1.7rem;
+    color: var(--main--blue);
+    font-weight: 600;
+}
+
+/* 로그인, 회원가입 */
+.unsigned, .unsigned a{
+    display: flex;
+    font-size: 1rem;
+    margin: 0.7rem;
+    color: var(--dark--gray);
+    align-items: center;
+}
+
+@media only all and (max-width:767px){
+    .inner-container{
+        justify-content: space-between;
+    }
+    #title a {
+        font-size: 1.7rem;
+        margin: 1.5rem;
+    }
+}
+
+@media only all and (max-width: 400px){
+    html{
+        font-size:9px;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+/* 회원일 때  헤더 */
+/* 헤더를 누르면 드롭다운 나타남 */
+.dropdown:hover .dropdown-btn{
+    display:block;
+}
+
+.dropdown *{
+    font-size:0.9rem;
+    cursor:pointer;
+}
+
+.dropdown {
+    position: relative;
+    margin-right: 1.4rem;
+}
+
+.dropdown-btn{
+    display: none;
+    position: absolute;
+    width:100%;
+}
+
+/* 로그아웃 */
+#sign-out{
+    width:100%;
+    background-color: var(--dark--gray);
+    color: var(--light--gray);
+    border: none;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+}
+

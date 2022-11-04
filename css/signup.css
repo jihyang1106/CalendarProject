@@ -1,0 +1,35 @@
+/* 화면 가운데 정렬
+main {
+    position: relative;
+}
+
+.signup-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 개체의 너비, 높이에 대해서 각각 -50%만큼 이동 */
+    /*text-align: center;
+} */
+
+.msg {
+    margin: 0.6rem;
+    display: none;
+}   
+
+#signup {
+    background-color: var(--main--blue);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+#signup:hover {
+    font-weight: bold;
+}
+
+#pwd-check,#user-nickname {
+    border: 3px solid var(--dark--gray);
+}
+

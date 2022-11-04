@@ -1,0 +1,44 @@
+/* 화면 가운데 정렬 */
+main .signin-container{
+    height: 100%;
+}
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.signin-form input {
+    width: 23rem;
+    font-size: 1rem;
+    padding:0.5rem;
+    margin:0.4rem;
+}
+
+#user-email, #user-pwd {
+    border: 3px solid var(--dark--gray);
+}
+
+#signin {
+    background-color: var(--main--blue);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+#signin:hover {
+    font-weight: bold;
+}
+
+#signup {
+    margin: 0.4rem;
+    color: var(--dark--gray);
+}
+

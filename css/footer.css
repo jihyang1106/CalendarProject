@@ -1,0 +1,31 @@
+/* 부모의 높이 지정 필요 */
+html,
+body {
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.footer-container {
+    background-color: var(--light--gray);
+    height: 4rem;
+}
+
+.footer-inner {
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.developer, .developer-email{
+    line-height: 4rem;
+    font-size: 1rem;
+}
