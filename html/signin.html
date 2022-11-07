@@ -12,20 +12,17 @@
     <meta name="description" content="중요도와 우선순위를 기준으로 성공을 위한 일정관리 웹사이트입니다.">
     
     <!-- favicon -->
-    <link rel="icon" href="./img/favicon.ico">
+    <link rel="icon" href="../img/favicon.ico" />
 
     <!-- font awesome-->
-    <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
-        crossorigin="anonymous" 
-        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- css -->
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/signin.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/signin.css">
 </head>
 <body>
     <header>
@@ -73,14 +70,11 @@
                 <h1>안녕하세요. <span class="blue">성공일정</span>입니다.</h1>
                 <div class="signin-form">
                     <input type="text" id="user-email" placeholder="이메일">
-                    <div class="email-message msg">이메일 형식으로 입력해주세요.</div>
                     <input type="password" id="user-pwd" placeholder="비밀번호">
-                    <div class="password-message msg">영문, 숫자, 특수문자(!@$%^&*)조합 8자 이상 입력해주세요.</div>
-                    <input type="password" id="pwd-check" placeholder="비밀번호 확인">
-                    <div class="password-check-message msg">비밀번호가 일치하지 않습니다.</div>
-                    <input type="text" id="user-nickname" placeholder="닉네임">
-                    <div class="nickname-message msg">한글 또는 영어 2-10로 설정해주세요.</div>
-                    <input type="button" id="signup" value="회원가입">
+                    <input type="button" id="signin" value="로그인">
+                    <div id="signup">
+                        <a href="#" id="signup">회원가입</a>
+                    </div>
                 </div>
                 <!-- sign-form -->
             </div>
